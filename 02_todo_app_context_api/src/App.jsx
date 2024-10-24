@@ -43,13 +43,16 @@ function App() {
             Manage Your Todos
           </h1>
           <div className="mb-4"><TodoForm/></div>
-          <div className="flex flex-wrap gap-y-3">
+          <div className="flex flex-wrap gap-y-3" >
             {
+              todos.length ?
               todos.map(todo => {
                 return <div key={todo.id} className="w-full">
                  <TodoItem todo={todo} />
                 </div>
               })
+              :
+              <div>No Todo's, please create todos</div>
             }
           </div>
         </div>
