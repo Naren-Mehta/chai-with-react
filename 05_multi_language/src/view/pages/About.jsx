@@ -8,7 +8,6 @@ const About = () => {
   return (
     <div>
       <div>
-        {selectedLang}==
         <h1 className="font-bold text-2xl my-5">{data.title}</h1>
         <p>{data.desc}</p>
       </div>
