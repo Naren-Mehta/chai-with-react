@@ -24,6 +24,9 @@ const Body = () => {
   };
 
   const handleScroll = () => {
+    // scrollY: How much I have scroll
+    // innerHeight: hight of the inner window (visible section)
+    // document.body.scrollHeight: total height of a web page
     if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
       console.log("Fectch more data");
       fetchMeme();
