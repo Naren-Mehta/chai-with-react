@@ -20,9 +20,11 @@ const ImageSlider = () => {
   };
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
         updateActiveIndex();
-    }, 4000)
+    }, 4000);
+
+    return () => clearInterval(interval);
   }, [])
 
   return (
