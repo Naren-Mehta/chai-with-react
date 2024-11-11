@@ -19,8 +19,6 @@ const Body = () => {
     } finally {
       setShowShimmer(false);
     }
-
-    
   };
 
   const handleScroll = () => {
