@@ -1,0 +1,9 @@
+// To Perform testing
+
+// 1. install react-testing-library -> npm i @testing-library/react
+// 2. install jest -> npm i jest
+// 3. configure jest -> npx jest --init
+// 4. If we get error: jest-environment-jsdom" is no longer shipped by default
+// Then install : npm i -D jest-environment-jsdom
+// 5. Create first test inside__tests__ folder
+// 6. installed babel: npm install --save-dev babel-jest @babel/core @babel/preset-env
