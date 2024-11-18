@@ -22,9 +22,6 @@ describe('Test Rroduct Image Gallery', () => {
             expect(imgElement).toHaveAttribute('src', imageUrls[index]);
         })
 
-
-    
-
         // or like this
         imageUrls.forEach((url, index)=> {
             expect(imgElements[index]).toBeInTheDocument();
