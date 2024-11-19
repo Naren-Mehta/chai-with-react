@@ -1,5 +1,7 @@
 describe('group', () => {
-    it('should', () => {
-        expect(1).toBeTruthy();
+    it('should', async () => {
+        const response = await fetch('/categories');
+        const data = await response.json();
+        expect(data).toHaveLength(3)
     })
 })

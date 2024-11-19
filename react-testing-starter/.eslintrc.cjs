@@ -8,7 +8,13 @@ module.exports = {
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
-  plugins: ["react-refresh"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  // plugins: ["react-refresh"],
+  plugins: ["@typescript-eslint"],
   rules: {
     "react-refresh/only-export-components": [
       "warn",
